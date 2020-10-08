@@ -21,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # TODO: In Production Mode this address will be ``api.backend.com``
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=vlz_9tpe9fvrm9onhk&6&#m0wbz_#tc7t_h#!!cu8x_$0pw9-'
+with open('brooklin_99.txt', 'r') as f:
+    SECRET_KEY = f.read()
 
 # TODO: In Production Mode this address will be ``api.backend.com``
 # SECURITY WARNING: don't run with debug turned on in production!
